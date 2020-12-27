@@ -14,14 +14,11 @@
 p{
   margin: 15px;
 }
-input{
-  border: solid 0.5px rgba(192, 192, 192, 0.39);
-  width: 400px;
-  height: 200px;
-}
 
 body{
   margin: 0;
+  width: 100vw;
+  height: 100px;
 }
 h2{
   margin: 15px 5px;
@@ -30,7 +27,7 @@ h2{
   border: solid 0.5px rgba(192, 192, 192, 0.39);
   padding: 16px;
   width: 240px;
-  height: 1000px;
+  height: 650px;
   margin: 0;
 }
 
@@ -41,18 +38,29 @@ h2{
 }
 
 .title{
-  width: 900px;
-  height: 1000px;
   position: absolute;
   left: 400px;
 }
 .right{
   float:right;
   margin: 0;
+  width: 500px;
+  height: 700px;
+  border:solid 0.5px rgba(192, 192, 192, 0.39);
 }
-.input{
-  width: 600px;
-  height: 1000px;
+input{
+  width: 100%;
+  display: block;
+  all:unset;
+  font-size: 30px;
+  font-weight: bold;
+  margin:20px;
+}
+
+textarea{
+  all:unset;
+  width: 100%;
+  margin:20px;
 }
 .left{
   float:left;

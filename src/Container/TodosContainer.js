@@ -5,11 +5,11 @@ import { addTodo, toggleTodo } from '../todos';
 
 function TodosContainer(){
     const todos=useSelector(state=>state.todos);
+    console.log(todos);
     const dispatch=useDispatch();
     
     const onCreate=useCallback((title,text)=>dispatch(addTodo(title,text)),[dispatch]);
     const onToggle=useCallback(id =>dispatch(toggleTodo(id)),[dispatch]);
-
 
     return <Todos
         todos={todos}
@@ -19,3 +19,4 @@ function TodosContainer(){
 }
 
 export default TodosContainer;
+
