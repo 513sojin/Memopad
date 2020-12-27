@@ -8,6 +8,7 @@ function TodoItem({todo, onToggle}){
             }}
             onClick={()=>onToggle(todo.id)}
         >
+            {todo.title}
             {todo.text}
         </li>
     );
@@ -32,16 +33,25 @@ function TodoList({todos,onToggle}){
 function Todos({todos, onCreate, onToggle}){
     console.log(todos);
     const [text,setText]=useState('');
+    const [title, setTitle]=useState('');
+
     const onChange=e=>setText(e.target.value);
+    const onChangeTitle=e=>setTitle(e.target.value);
+
     const onSubmit =e=>{
         e.preventDefault();
-        onCreate(text);
+        onCreate(title,text);
         setText('');
+        setTitle('');
     }
+
     return(
         <div class="title">
             <div class="right">
                 <form onSubmit={onSubmit}>
+                    <input
+                        value={title} onChange={onChangeTitle} 
+                    />
                     <input class="input"
                         value={text} onChange={onChange} 
                     />
