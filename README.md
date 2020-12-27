@@ -1,5 +1,5 @@
 # MemoPad
-간단한 메모장 구현하기
+간단한 메모장 구현하기.
 제목과 내용칸에 내용을 입력한 후 제목부분에서 enter 키를 누르면 됨
 
 ## 1.기본상태
@@ -16,5 +16,6 @@
 
 ## 4. 특징
 -redux를 통한 상태관리
+
 ![image](https://user-images.githubusercontent.com/54045865/103174502-0aece380-48a6-11eb-9c58-adb41abe17eb.png)
 ![image](https://user-images.githubusercontent.com/54045865/103174513-1d671d00-48a6-11eb-8560-9361e2f4512d.png)
